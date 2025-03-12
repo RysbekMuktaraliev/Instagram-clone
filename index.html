@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Instagram</title>
+</head>
+<body>
+    <form class="inst__form" action="#">
+        <h2 class="inst__vhod">Instagram</h2>
+        <input class="inst__input-login" type="text" placeholder="Телефон, имя пользователя или эл.адрес">
+        <input class="inst__input-password" type="password" placeholder="Пароль">
+        <a  class="inst__eyes" href="#">Показать</a>
+        <button class="inst__btn"><a  href="#">Войти</a></button>
+        <p class="form__and">Или</p>
+        <div class="inst__form-fbk">
+            <img class="inst__help-img" src="./src/img/free-icon-facebook-5968764.png" alt="">
+            <a class="inst__help-a" href="#">Войти через Facebook</a>
+        
+        </div>
+       
+       <a class="inst__forgot" href="./vhod.html">Забыли пароль?</a>
+    </form>
+ 
+    <div class="inst__form-reg" action="#">
+        <p class="inst__reg">У вас нет аккаунт? <a  class="inst__helper" href="#">Зарегистрироваться</a></p>
+    </div>
+    <div class="inst__icon">
+        <img class="inst__icon-img" alt="Скачать из Google Play"  src="https://static.cdninstagram.com/rsrc.php/v4/yr/r/fDjwyLC88oO.png">
+        <img class="inst__icon-img" alt="Скачать с сайта Microsoft" src="https://static.cdninstagram.com/rsrc.php/v4/yv/r/_UbeIRgTpG-.png">
+        
+    </div>
+    
+    <div class="inst__additional ">
+       
+           
+               <a href=""> Meta</a> <a href="#">  Информация</a> <a href="#"> Блог</a> <a href="#">Вакансии</a> <a href="#">Помощь</a> <a href="#"> API</a> <a href="#"> Конфидециальность</a> <a href="#"> Условия</a> <a href="#"> Места</a>
+                <a href="#">Instagram lite</a>  <br> <a href="#"> Threads</a> <a href="#"> Загруска контактов и лица </a>
+              <a href="#"> не являющеися пользователями</a> <a href="#"> Meta Verified</a>
+           
+      
+    </div>
+    <script src="./src/libs/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).on('click', '.inst__eyes', function () {
+            if ($('.inst__input-password').attr('type') == 'password') {
+                $('.inst__input-password').attr('type', 'text')
+               $(".inst__eyes").html('скрыть')              
+           
+            } else {
+                $('.inst__input-password').attr('type','password')
+                $(".inst__eyes").html('Показать')
+            }
+    })
+
+    </script>
+</body>
+</html>
