@@ -170,7 +170,7 @@ body{
     top: 10px;
     left: 37px;
     content: "";
-    width: 130px;
+    width: 40%;
     height: 2px;
     background-color: gray;
 
@@ -180,7 +180,7 @@ body{
     top: 10px;
     right: 37px;
     content: "";
-    width: 130px;
+    width: 40%;
     height: 2px;
     background-color: gray;
 
